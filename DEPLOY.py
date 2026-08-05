@@ -106,6 +106,11 @@ def deploy(jp_path, out_path, patch_path, ref_path=None, ref_patch=None):
     master = json.load(open(MASTER, encoding='utf-8'))
 
     print('원본(JP) 로드:', jp_path)
+    with open(jp_path, 'rb') as fp:                 # NDS 헤더 0x0C: 게임코드 4바이트
+        fp.seek(0x0C)
+        code = fp.read(4).decode('ascii', 'replace')
+    if code != 'ATMJ':
+        print('  !! 게임코드가 ATMJ 가 아닙니다(%s). 천외마경II 卍MARU 일본판이 맞는지 확인하세요.' % code)
     rom = ndspy.rom.NintendoDSRom.fromFile(jp_path)
 
     with tempfile.TemporaryDirectory() as workdir:
