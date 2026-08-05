@@ -32,3 +32,7 @@ xdelta.exe
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ── 빌드 산출물 ─────────────────────────────────────────────
+build/
+translation/_split/
