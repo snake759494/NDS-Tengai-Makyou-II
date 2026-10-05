@@ -12,8 +12,8 @@
 xdelta3 -d -s "Tengai Makyou II - Manji Maru (Japan).nds" Tengai_Makyou_II_KR_v3.4.xdelta "Tengai_Makyou_II_KR_v3.4.nds"
 ```
 
-원본 MD5: `87e7ce48da67253fc3d70210c6fa1563`  
-적용 결과 MD5: `04746b727245140c90527d717ecba762`  
+원본 MD5: `87e7ce48da67253fc3d70210c6fa1563`
+적용 결과 MD5: `04746b727245140c90527d717ecba762`
 적용 결과 SHA-256: `c6dce49289c76bdcc891ac9904f29867ff8e7534da23e94e1bbb0f1911b12383`
 
 ## 상세 변경 사항
@@ -926,4 +926,3 @@ xdelta3 -d -s "Tengai Makyou II - Manji Maru (Japan).nds" Tengai_Makyou_II_KR_v3
 ![06-minimaps](https://raw.githubusercontent.com/snake759494/NDS-Tengai-Makyou-II/v3.4/docs/releases/v3.4/06-minimaps.png)
 
 ![07-minimaps](https://raw.githubusercontent.com/snake759494/NDS-Tengai-Makyou-II/v3.4/docs/releases/v3.4/07-minimaps.png)
-
