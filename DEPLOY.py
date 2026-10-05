@@ -10,7 +10,7 @@
 
 동작
   1) 일본판 원본 ROM을 base 로 읽는다.
-  2) **이미지·폰트 레이어**(지도/메인메뉴/전투/세이브로드 그래픽 + 한글 글꼴 37개 파일)를
+  2) **이미지·폰트 레이어**(지도/메인메뉴/전투/세이브로드 그래픽 + 한글 글꼴, v3.4 기준 170개 파일)를
      기존 배포 패치(dist/*.xdelta)를 원본에 적용해 만든 "참조 ROM"에서 가져온다.
      → 저장소에 게임 데이터를 두지 않고도 그래픽 한글화를 그대로 재현한다.
      (직접 만든 참조 ROM 이 있으면 --ref 로 지정)
@@ -62,6 +62,10 @@ IMAGE_FIDS = [
     9186, 9188, 9190, 9192,     # saveload/mes_obj/mes01~08  세이브·로드 메시지
     9194, 9196, 9198, 9200,
 ]
+# v3.4 also rebuilds minimaps, title/ending artwork, credits and cursor states.
+# Keep every rebuilt resource when using a release ROM as the image layer.
+with open(os.path.join(TOOLS, 'images', 'rebuilt_resources.json'), encoding='utf-8') as fp:
+    IMAGE_FIDS = sorted(set(IMAGE_FIDS) | {int(fid) for fid in json.load(fp)})
 
 
 def newest_dist_patch():

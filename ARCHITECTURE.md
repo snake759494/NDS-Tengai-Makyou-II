@@ -143,7 +143,7 @@
 
 화면에 '그림으로서의 글자'로 그려지는 메뉴는 텍스트 토큰 패치와 별개로 PNG 왕복(round-trip)으로 교체합니다. 대상 세 종:
 
-- **mainmenu.obc** (LZ10, 8bpp) — 메인/필드/하단 라벨. 8B 헤더 + 448B(224색 BGR555 팔레트) + 456B부터 8bpp 타일(64B/타일). 워드 = 8타일(가로4×세로2 = 32×16) 그리드.
+- **mainmenu.obc** (LZ10, 8bpp) — 메인/필드/하단 라벨. 4B 플래그/팔레트 길이 + 192B(96색 BGR555 팔레트) + 4B 픽셀 길이 + 200B부터 8bpp 타일(64B/타일). 기존 워드 뷰는 앞 장식 4타일을 건너뛰어 456B부터 시작. 워드 = 8타일(가로4×세로2 = 32×16) 그리드.
 - **command_icon (bs_obj_command_icon1~17.cobj)** (LZ10, 4bpp) — 전투 명령 아이콘. 헤더 없는 순수 256B = 8타일, 32×16. 검정(배경)·흰색(글자) 2색.
 - **kiten (char00.chr/scrn00.scr/palt.pal)** (CMP) — 시작 선택 화면, 256×256.
 
@@ -165,13 +165,13 @@ kiten의 char/scrn/palt가 쓰는 자체 컨테이너입니다.
 
 ### 5.3 추출 (`menu_extract.py`)
 
-`bgr555`로 5비트→8비트 색 확장. `extract_mainmenu`는 LZ10 해제 후 224색 팔레트와 8bpp 타일을 워드 그리드로 배치하고, 녹색(0,248,0) 글자 인덱스를 흰색으로 치환해 화면과 일치시킵니다. `extract_commands`는 4bpp 타일을 합성 팔레트(0=검정, 5=흰색)로 디코드합니다. `extract_kiten`은 `parse_fnt`로 경로를 찾아 CMP 해제 후, 팔레트 뱅크 헤더(앞 4B)를 제거하고(안 빼면 색 2칸 밀림) char 서브헤더 뒤 4bpp 타일을 scrn 타일맵(u16: `ti&0x3FF, hflip>>10, vflip>>11, palbank>>12`)으로 256×256 인덱스에 합성합니다. 산출물은 PIL P모드 PNG입니다.
+`bgr555`로 5비트→8비트 색 확장. `extract_mainmenu`는 LZ10 해제 후 96색 팔레트와 8bpp 타일을 워드 그리드로 배치하고, 녹색(0,248,0) 글자 인덱스를 흰색으로 치환해 화면과 일치시킵니다. `extract_commands`는 4bpp 타일을 합성 팔레트(0=검정, 5=흰색)로 디코드합니다. `extract_kiten`은 `parse_fnt`로 경로를 찾아 CMP 해제 후, 팔레트 뱅크 헤더(앞 4B)를 제거하고(안 빼면 색 2칸 밀림) char 서브헤더 뒤 4bpp 타일을 scrn 타일맵(u16: `ti&0x3FF, hflip>>10, vflip>>11, palbank>>12`)으로 256×256 인덱스에 합성합니다. 산출물은 PIL P모드 PNG입니다.
 
 ### 5.4 삽입 (`menu_insert.py`, `patch_all.py`)
 
 `load_idx`는 P모드 PNG는 인덱스를 직접 쓰고, RGB는 팔레트와 유클리드 최근접 매칭으로 인덱스화합니다.
 
-- `insert_mainmenu`: 원본 LZ10 해제 → 앞 456B 헤더+팔레트 보존, PNG를 워드 그리드 역매핑으로 8bpp 타일 재구성, `lz10_store`로 재압축(round-trip assert) → `append_repoint`.
+- `insert_mainmenu`: 원본 LZ10 해제 → 앞 456B 메타데이터+팔레트+장식 4타일 보존, PNG를 워드 그리드 역매핑으로 8bpp 타일 재구성, `lz10_store`로 재압축(round-trip assert) → `append_repoint`.
 - `insert_command`: 8타일을 `v0|v1<<4` 4bpp 패킹, `lz10_store` → `append_repoint`.
 - `insert_kiten`: 32×32 블록마다 우세 팔레트 뱅크를 추출, 4방향 플립으로 타일 디덥(타일 1024 초과 시 예외), 타일맵 엔트리 `ti|hf<<10|vf<<11|pl<<12` 구성, char를 원본 타일 수까지 0-타일 패딩해 크기 유지, `cmp_encode_rle(ver=1)`로 재압축(round-trip assert) → `append_repoint`.
 

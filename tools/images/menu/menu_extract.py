@@ -49,7 +49,13 @@ def synth_pal(n=16):
 
 def extract_mainmenu(rom,n2f,outdir,COLS=8):
     dec=tools.lz10_dec(tools.read_file(rom,n2f['mainmenu.obc'])[0])
-    pal=bgr555(dec[8:456])
+    palette_bytes=struct.unpack_from('<H',dec,0)[0]
+    pal=bgr555(dec[4:4+palette_bytes])
+    data_start=8+palette_bytes
+    assert struct.unpack_from('<I',dec,4+palette_bytes)[0]==len(dec)-data_start
+    # Preserve legacy word indices: this view omits four leading decoration tiles.
+    # They belong to the graphics payload, not the palette.
+    assert data_start+256==456
     # 메뉴 글자 본체 인덱스(idx36~)는 내장(맵용) 팔레트엔 녹색으로 들어 있으나,
     # 게임이 메뉴를 그릴 땐 청록->흰 그라데이션(idx32~35)을 잇는 '흰색'이다.
     # 이 인덱스들은 글자에만 쓰이므로(맵 그래픽 무관) 화면과 같게 흰색으로 표시.

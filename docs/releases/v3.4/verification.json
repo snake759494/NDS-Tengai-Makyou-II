@@ -1,0 +1,5973 @@
+{
+  "source_sha256": "f52b0c585eaf2cf8d08336db3bce8291255ca48d532f6504e003cc75ab9cfc24",
+  "files": {
+    "2766": "/data/usd/mainmenu.obc",
+    "2764": "/data/usd/fuw_bg.chr",
+    "3940": "/iv_battle/grph/obj/files/bs_obj_command_icon1.cobj",
+    "3949": "/iv_battle/grph/obj/files/bs_obj_command_icon2.cobj",
+    "3950": "/iv_battle/grph/obj/files/bs_obj_command_icon3.cobj",
+    "3951": "/iv_battle/grph/obj/files/bs_obj_command_icon4.cobj",
+    "3952": "/iv_battle/grph/obj/files/bs_obj_command_icon5.cobj",
+    "3953": "/iv_battle/grph/obj/files/bs_obj_command_icon6.cobj",
+    "3954": "/iv_battle/grph/obj/files/bs_obj_command_icon7.cobj",
+    "3955": "/iv_battle/grph/obj/files/bs_obj_command_icon8.cobj",
+    "3956": "/iv_battle/grph/obj/files/bs_obj_command_icon9.cobj",
+    "3941": "/iv_battle/grph/obj/files/bs_obj_command_icon10.cobj",
+    "3942": "/iv_battle/grph/obj/files/bs_obj_command_icon11.cobj",
+    "3943": "/iv_battle/grph/obj/files/bs_obj_command_icon12.cobj",
+    "3944": "/iv_battle/grph/obj/files/bs_obj_command_icon13.cobj",
+    "3945": "/iv_battle/grph/obj/files/bs_obj_command_icon14.cobj",
+    "3946": "/iv_battle/grph/obj/files/bs_obj_command_icon15.cobj",
+    "3947": "/iv_battle/grph/obj/files/bs_obj_command_icon16.cobj",
+    "3948": "/iv_battle/grph/obj/files/bs_obj_command_icon17.cobj",
+    "3966": "/iv_battle/grph/obj/files/bs_obj_name_p1.cobj",
+    "3967": "/iv_battle/grph/obj/files/bs_obj_name_p2.cobj",
+    "3968": "/iv_battle/grph/obj/files/bs_obj_name_p3.cobj",
+    "3969": "/iv_battle/grph/obj/files/bs_obj_name_p4.cobj",
+    "9161": "/uno_all/saveload/btn_obj/btn01.chr",
+    "9163": "/uno_all/saveload/btn_obj/btn02.chr",
+    "9165": "/uno_all/saveload/btn_obj/btn03.chr",
+    "9168": "/uno_all/saveload/cur_obj/cur01.chr",
+    "9170": "/uno_all/saveload/cur_obj/cur02.chr",
+    "9172": "/uno_all/saveload/cur_obj/cur03.chr",
+    "9174": "/uno_all/saveload/cur_obj/cur04.chr",
+    "9176": "/uno_all/saveload/cur_obj/cur05.chr",
+    "9186": "/uno_all/saveload/mes_obj/mes01.chr",
+    "9188": "/uno_all/saveload/mes_obj/mes02.chr",
+    "9190": "/uno_all/saveload/mes_obj/mes03.chr",
+    "9192": "/uno_all/saveload/mes_obj/mes04.chr",
+    "9194": "/uno_all/saveload/mes_obj/mes05.chr",
+    "9196": "/uno_all/saveload/mes_obj/mes06.chr",
+    "9198": "/uno_all/saveload/mes_obj/mes07.chr",
+    "9200": "/uno_all/saveload/mes_obj/mes08.chr",
+    "9140": "/uno_all/kiten/bg00/char00.chr",
+    "9143": "/uno_all/kiten/bg00/scrn00.scr",
+    "12629": "/visual_title/grph/title_demo/files/tt_bg_select.cobj",
+    "12631": "/visual_title/grph/title_demo/files/tt_bg_select.cscr",
+    "12602": "/visual_title/grph/title_demo/files/t02_title.cobj",
+    "12604": "/visual_title/grph/title_demo/files/t02_title.cscr",
+    "9202": "/uno_all/saveload/sub_bg/char.chr",
+    "9204": "/uno_all/saveload/sub_bg/scrn.scr",
+    "4592": "/progress_sys/files/ed_title.cobj",
+    "11715": "/visual_op02/grph/op02_demo/files/p06_g_staff.cobj",
+    "11717": "/visual_op02/grph/op02_demo/files/p06_g_staff0.cscr",
+    "11724": "/visual_op02/grph/op02_demo/files/p07_g_staff.cobj",
+    "11726": "/visual_op02/grph/op02_demo/files/p07_g_staff0.cscr",
+    "11732": "/visual_op02/grph/op02_demo/files/p08_g_staff.cobj",
+    "11734": "/visual_op02/grph/op02_demo/files/p08_g_staff0.cscr",
+    "11740": "/visual_op02/grph/op02_demo/files/p09_g_staff.cobj",
+    "11742": "/visual_op02/grph/op02_demo/files/p09_g_staff0.cscr",
+    "11752": "/visual_op02/grph/op02_demo/files/p11_g_staff.cobj",
+    "11754": "/visual_op02/grph/op02_demo/files/p11_g_staff0.cscr",
+    "11763": "/visual_op02/grph/op02_demo/files/p12_g_staff.cobj",
+    "11765": "/visual_op02/grph/op02_demo/files/p12_g_staff0.cscr",
+    "11771": "/visual_op02/grph/op02_demo/files/p13_g_staff.cobj",
+    "11773": "/visual_op02/grph/op02_demo/files/p13_g_staff0.cscr",
+    "11774": "/visual_op02/grph/op02_demo/files/p13_g_staff1.cscr",
+    "2796": "/data/usd/waa0.chr",
+    "2797": "/data/usd/wab0.chr",
+    "2799": "/data/usd/wab2.chr",
+    "2800": "/data/usd/wac0.chr",
+    "2804": "/data/usd/wai0.chr",
+    "2805": "/data/usd/waq0.chr",
+    "2806": "/data/usd/wba0.chr",
+    "2807": "/data/usd/wbb0.chr",
+    "2808": "/data/usd/wbe0.chr",
+    "2809": "/data/usd/wbe1.chr",
+    "2810": "/data/usd/wbg0.chr",
+    "2811": "/data/usd/wca0.chr",
+    "2812": "/data/usd/wcb0.chr",
+    "2813": "/data/usd/wcb1.chr",
+    "2814": "/data/usd/wcd0.chr",
+    "2815": "/data/usd/wce0.chr",
+    "2818": "/data/usd/wcq0.chr",
+    "2819": "/data/usd/wcq1.chr",
+    "2820": "/data/usd/wcr0.chr",
+    "2821": "/data/usd/wda0.chr",
+    "2822": "/data/usd/wdb0.chr",
+    "2823": "/data/usd/wde0.chr",
+    "2824": "/data/usd/wdf0.chr",
+    "2825": "/data/usd/wdi0.chr",
+    "2826": "/data/usd/wdj0.chr",
+    "2827": "/data/usd/wdj0a.chr",
+    "2828": "/data/usd/wdp0.chr",
+    "2830": "/data/usd/wee0.chr",
+    "2833": "/data/usd/weh0.chr",
+    "2834": "/data/usd/wei0.chr",
+    "2835": "/data/usd/weo0.chr",
+    "2836": "/data/usd/wep0.chr",
+    "2837": "/data/usd/weq0.chr",
+    "2838": "/data/usd/wer0.chr",
+    "2839": "/data/usd/wfa0.chr",
+    "2840": "/data/usd/wfa0a.chr",
+    "2841": "/data/usd/wfj0.chr",
+    "2842": "/data/usd/wfk0.chr",
+    "2843": "/data/usd/wfl0.chr",
+    "2844": "/data/usd/wfp0.chr",
+    "2845": "/data/usd/wfq0.chr",
+    "2847": "/data/usd/wfs0.chr",
+    "2848": "/data/usd/wft0.chr",
+    "2849": "/data/usd/wfu0.chr",
+    "2850": "/data/usd/wga0.chr",
+    "2852": "/data/usd/wgb0.chr",
+    "2853": "/data/usd/wgd0.chr",
+    "2854": "/data/usd/wgn0.chr",
+    "2855": "/data/usd/wgq0.chr",
+    "2856": "/data/usd/wgs0.chr",
+    "2857": "/data/usd/wgs0a.chr",
+    "2858": "/data/usd/wgt0.chr",
+    "2859": "/data/usd/whb0.chr",
+    "2860": "/data/usd/whc0.chr",
+    "2861": "/data/usd/whn0.chr",
+    "2862": "/data/usd/whn0a.chr",
+    "2865": "/data/usd/xia0.chr",
+    "2866": "/data/usd/xib0.chr",
+    "2867": "/data/usd/xie0.chr",
+    "2868": "/data/usd/xjb0.chr",
+    "2870": "/data/usd/xjb1a.chr",
+    "2871": "/data/usd/xjb2.chr",
+    "2872": "/data/usd/xjc0.chr",
+    "2874": "/data/usd/xjc1a.chr",
+    "2875": "/data/usd/xjc2.chr",
+    "2876": "/data/usd/xjd0.chr",
+    "2877": "/data/usd/xji0.chr",
+    "2878": "/data/usd/xjs0.chr",
+    "2879": "/data/usd/xju0.chr",
+    "2880": "/data/usd/xkb0.chr",
+    "2882": "/data/usd/xkb1a.chr",
+    "2883": "/data/usd/xkc0.chr",
+    "2885": "/data/usd/xkc1a.chr",
+    "2886": "/data/usd/xkh0.chr",
+    "2887": "/data/usd/xkp0.chr",
+    "2888": "/data/usd/xkq0.chr",
+    "2889": "/data/usd/xkr0.chr",
+    "2890": "/data/usd/xla0.chr",
+    "2891": "/data/usd/xlc0.chr",
+    "2892": "/data/usd/xle0.chr",
+    "2893": "/data/usd/xlf0.chr",
+    "2894": "/data/usd/xlh0.chr",
+    "2895": "/data/usd/xlp0.chr",
+    "2896": "/data/usd/xmf0.chr",
+    "2899": "/data/usd/xmr0.chr",
+    "2900": "/data/usd/xms0.chr",
+    "2901": "/data/usd/xmy0.chr",
+    "2902": "/data/usd/yna0.chr",
+    "2903": "/data/usd/ynb0.chr",
+    "2904": "/data/usd/ync0.chr",
+    "2907": "/data/usd/ynr0.chr",
+    "2908": "/data/usd/yns0.chr",
+    "2909": "/data/usd/ynu0.chr",
+    "2910": "/data/usd/yoa0.chr",
+    "2911": "/data/usd/yob0.chr",
+    "2912": "/data/usd/yoc0.chr",
+    "2913": "/data/usd/yoo0.chr",
+    "2914": "/data/usd/yop0.chr",
+    "2915": "/data/usd/yoy0.chr",
+    "2916": "/data/usd/ypa0.chr",
+    "2918": "/data/usd/ypc0.chr",
+    "2920": "/data/usd/ypc1a.chr",
+    "2921": "/data/usd/ypd0.chr",
+    "2922": "/data/usd/yqa0.chr",
+    "2923": "/data/usd/yqb0.chr",
+    "2924": "/data/usd/yql0.chr"
+  },
+  "original_codecs": {
+    "2766": "LZ10",
+    "2764": "LZ10",
+    "3940": "LZ10",
+    "3949": "LZ10",
+    "3950": "LZ10",
+    "3951": "LZ10",
+    "3952": "LZ10",
+    "3953": "LZ10",
+    "3954": "LZ10",
+    "3955": "LZ10",
+    "3956": "LZ10",
+    "3941": "LZ10",
+    "3942": "LZ10",
+    "3943": "LZ10",
+    "3944": "LZ10",
+    "3945": "LZ10",
+    "3946": "LZ10",
+    "3947": "LZ10",
+    "3948": "LZ10",
+    "3966": "LZ10",
+    "3967": "LZ10",
+    "3968": "LZ10",
+    "3969": "LZ10",
+    "9161": "CMP",
+    "9163": "CMP",
+    "9165": "CMP",
+    "9168": "CMP",
+    "9170": "CMP",
+    "9172": "CMP",
+    "9174": "CMP",
+    "9176": "CMP",
+    "9186": "CMP",
+    "9188": "CMP",
+    "9190": "CMP",
+    "9192": "CMP",
+    "9194": "CMP",
+    "9196": "CMP",
+    "9198": "CMP",
+    "9200": "CMP",
+    "9140": "CMP",
+    "9143": "CMP",
+    "12629": "LZ10",
+    "12631": "raw",
+    "12602": "LZ10",
+    "12604": "raw",
+    "9202": "CMP",
+    "9204": "CMP",
+    "4592": "LZ10",
+    "11715": "LZ10",
+    "11717": "raw",
+    "11724": "LZ10",
+    "11726": "raw",
+    "11732": "LZ10",
+    "11734": "raw",
+    "11740": "LZ10",
+    "11742": "raw",
+    "11752": "LZ10",
+    "11754": "raw",
+    "11763": "LZ10",
+    "11765": "raw",
+    "11771": "LZ10",
+    "11773": "raw",
+    "11774": "raw",
+    "2796": "LZ10",
+    "2797": "LZ10",
+    "2799": "LZ10",
+    "2800": "LZ10",
+    "2804": "LZ10",
+    "2805": "LZ10",
+    "2806": "LZ10",
+    "2807": "LZ10",
+    "2808": "LZ10",
+    "2809": "LZ10",
+    "2810": "LZ10",
+    "2811": "LZ10",
+    "2812": "LZ10",
+    "2813": "LZ10",
+    "2814": "LZ10",
+    "2815": "LZ10",
+    "2818": "LZ10",
+    "2819": "LZ10",
+    "2820": "LZ10",
+    "2821": "LZ10",
+    "2822": "LZ10",
+    "2823": "LZ10",
+    "2824": "LZ10",
+    "2825": "LZ10",
+    "2826": "LZ10",
+    "2827": "LZ10",
+    "2828": "LZ10",
+    "2830": "LZ10",
+    "2833": "LZ10",
+    "2834": "LZ10",
+    "2835": "LZ10",
+    "2836": "LZ10",
+    "2837": "LZ10",
+    "2838": "LZ10",
+    "2839": "LZ10",
+    "2840": "LZ10",
+    "2841": "LZ10",
+    "2842": "LZ10",
+    "2843": "LZ10",
+    "2844": "LZ10",
+    "2845": "LZ10",
+    "2847": "LZ10",
+    "2848": "LZ10",
+    "2849": "LZ10",
+    "2850": "LZ10",
+    "2852": "LZ10",
+    "2853": "LZ10",
+    "2854": "LZ10",
+    "2855": "LZ10",
+    "2856": "LZ10",
+    "2857": "LZ10",
+    "2858": "LZ10",
+    "2859": "LZ10",
+    "2860": "LZ10",
+    "2861": "LZ10",
+    "2862": "LZ10",
+    "2865": "LZ10",
+    "2866": "LZ10",
+    "2867": "LZ10",
+    "2868": "LZ10",
+    "2870": "LZ10",
+    "2871": "LZ10",
+    "2872": "LZ10",
+    "2874": "LZ10",
+    "2875": "LZ10",
+    "2876": "LZ10",
+    "2877": "LZ10",
+    "2878": "LZ10",
+    "2879": "LZ10",
+    "2880": "LZ10",
+    "2882": "LZ10",
+    "2883": "LZ10",
+    "2885": "LZ10",
+    "2886": "LZ10",
+    "2887": "LZ10",
+    "2888": "LZ10",
+    "2889": "LZ10",
+    "2890": "LZ10",
+    "2891": "LZ10",
+    "2892": "LZ10",
+    "2893": "LZ10",
+    "2894": "LZ10",
+    "2895": "LZ10",
+    "2896": "LZ10",
+    "2899": "LZ10",
+    "2900": "LZ10",
+    "2901": "LZ10",
+    "2902": "LZ10",
+    "2903": "LZ10",
+    "2904": "LZ10",
+    "2907": "LZ10",
+    "2908": "LZ10",
+    "2909": "LZ10",
+    "2910": "LZ10",
+    "2911": "LZ10",
+    "2912": "LZ10",
+    "2913": "LZ10",
+    "2914": "LZ10",
+    "2915": "LZ10",
+    "2916": "LZ10",
+    "2918": "LZ10",
+    "2920": "LZ10",
+    "2921": "LZ10",
+    "2922": "LZ10",
+    "2923": "LZ10",
+    "2924": "LZ10"
+  },
+  "province_checks": [
+    {
+      "text": "석견",
+      "box": [
+        39,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "출운",
+      "box": [
+        71,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "인번",
+      "box": [
+        103,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "근강",
+      "box": [
+        145,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "월전",
+      "box": [
+        176,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "월중",
+      "box": [
+        207,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "월후",
+      "box": [
+        238,
+        12,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        12,
+        33
+      ]
+    },
+    {
+      "text": "장문",
+      "box": [
+        9,
+        65,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        65,
+        86
+      ]
+    },
+    {
+      "text": "안예",
+      "box": [
+        40,
+        65,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        65,
+        86
+      ]
+    },
+    {
+      "text": "길비",
+      "box": [
+        72,
+        65,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        65,
+        86
+      ]
+    },
+    {
+      "text": "단파",
+      "box": [
+        103,
+        65,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        65,
+        86
+      ]
+    },
+    {
+      "text": "경",
+      "box": [
+        145,
+        65,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        74
+      ]
+    },
+    {
+      "text": "화다",
+      "box": [
+        176,
+        65,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        65,
+        86
+      ]
+    },
+    {
+      "text": "낭화",
+      "box": [
+        103,
+        119,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        119,
+        140
+      ]
+    },
+    {
+      "text": "이세",
+      "box": [
+        145,
+        119,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        119,
+        140
+      ]
+    },
+    {
+      "text": "미장",
+      "box": [
+        176,
+        119,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        119,
+        140
+      ]
+    },
+    {
+      "text": "기이",
+      "box": [
+        123,
+        149,
+        11,
+        33
+      ],
+      "glyph_rows": [
+        149,
+        170
+      ]
+    }
+  ],
+  "text_checks": [
+    {
+      "text": "닫기",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 70
+    },
+    {
+      "text": "판매",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 96
+    },
+    {
+      "text": "목록",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 98
+    },
+    {
+      "text": "상태",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 82
+    },
+    {
+      "text": "도구",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 65
+    },
+    {
+      "text": "주문",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 81
+    },
+    {
+      "text": "무구",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 68
+    },
+    {
+      "text": "오의",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 66
+    },
+    {
+      "text": "포격",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 76
+    },
+    {
+      "text": "순이",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 68
+    },
+    {
+      "text": "지도",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 69
+    },
+    {
+      "text": "모드",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 75
+    },
+    {
+      "text": "작전",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 71
+    },
+    {
+      "text": "만지",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 74
+    },
+    {
+      "text": "카부키",
+      "ink_width": 32,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 0,
+      "pixels": 104
+    },
+    {
+      "text": "극락",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 76
+    },
+    {
+      "text": "키누",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 60
+    },
+    {
+      "text": "명령",
+      "ink_width": 21,
+      "allocation": [
+        44,
+        16
+      ],
+      "gap": 1,
+      "pixels": 98
+    },
+    {
+      "text": "도움",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 88
+    },
+    {
+      "text": "체",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 43
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "금",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 45
+    },
+    {
+      "text": "후",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 42
+    },
+    {
+      "text": "사",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "용",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 49
+    },
+    {
+      "text": "구",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 29
+    },
+    {
+      "text": "입",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 42
+    },
+    {
+      "text": "판",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 45
+    },
+    {
+      "text": "매",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 51
+    },
+    {
+      "text": "보",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 41
+    },
+    {
+      "text": "관",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 40
+    },
+    {
+      "text": "찾",
+      "ink_width": 11,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 42
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "버",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 43
+    },
+    {
+      "text": "림",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 50
+    },
+    {
+      "text": "석",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 29
+    },
+    {
+      "text": "견",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 37
+    },
+    {
+      "text": "출",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 59
+    },
+    {
+      "text": "운",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 43
+    },
+    {
+      "text": "인",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 34
+    },
+    {
+      "text": "번",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 42
+    },
+    {
+      "text": "근",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 35
+    },
+    {
+      "text": "강",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 38
+    },
+    {
+      "text": "월",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 57
+    },
+    {
+      "text": "전",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 37
+    },
+    {
+      "text": "월",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 57
+    },
+    {
+      "text": "중",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 48
+    },
+    {
+      "text": "월",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 57
+    },
+    {
+      "text": "후",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 42
+    },
+    {
+      "text": "장",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 40
+    },
+    {
+      "text": "문",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 47
+    },
+    {
+      "text": "안",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 35
+    },
+    {
+      "text": "예",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 44
+    },
+    {
+      "text": "길",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 47
+    },
+    {
+      "text": "비",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 41
+    },
+    {
+      "text": "단",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 37
+    },
+    {
+      "text": "파",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 42
+    },
+    {
+      "text": "경",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 41
+    },
+    {
+      "text": "화",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 45
+    },
+    {
+      "text": "다",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 34
+    },
+    {
+      "text": "낭",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 37
+    },
+    {
+      "text": "화",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 45
+    },
+    {
+      "text": "이",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 33
+    },
+    {
+      "text": "세",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 39
+    },
+    {
+      "text": "미",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 41
+    },
+    {
+      "text": "장",
+      "ink_width": 11,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 40
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 27
+    },
+    {
+      "text": "이",
+      "ink_width": 10,
+      "allocation": [
+        11,
+        11
+      ],
+      "gap": 0,
+      "pixels": 33
+    },
+    {
+      "text": "공격",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 79
+    },
+    {
+      "text": "검법",
+      "ink_width": 21,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 93
+    },
+    {
+      "text": "돌파",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 102
+    },
+    {
+      "text": "주문",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 81
+    },
+    {
+      "text": "자세",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 73
+    },
+    {
+      "text": "작전",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 71
+    },
+    {
+      "text": "무구",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 68
+    },
+    {
+      "text": "도구",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 65
+    },
+    {
+      "text": "?",
+      "ink_width": 5,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 14
+    },
+    {
+      "text": "비술",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 91
+    },
+    {
+      "text": "체술",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 93
+    },
+    {
+      "text": "귀도",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 69
+    },
+    {
+      "text": "포격",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 76
+    },
+    {
+      "text": "공격",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 79
+    },
+    {
+      "text": "화염",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 91
+    },
+    {
+      "text": "어뢰",
+      "ink_width": 21,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 81
+    },
+    {
+      "text": "열탄",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 95
+    },
+    {
+      "text": "만지",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 74
+    },
+    {
+      "text": "체",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 43
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "카부키",
+      "ink_width": 32,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 0,
+      "pixels": 104
+    },
+    {
+      "text": "체",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 43
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "극락",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 76
+    },
+    {
+      "text": "체",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 43
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "키누",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 60
+    },
+    {
+      "text": "체",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 43
+    },
+    {
+      "text": "기",
+      "ink_width": 10,
+      "allocation": [
+        16,
+        16
+      ],
+      "gap": 1,
+      "pixels": 27
+    },
+    {
+      "text": "취소",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 64
+    },
+    {
+      "text": "결정",
+      "ink_width": 21,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 92
+    },
+    {
+      "text": "삭제",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 72
+    },
+    {
+      "text": "예",
+      "ink_width": 10,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 44
+    },
+    {
+      "text": "아니오",
+      "ink_width": 32,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 0,
+      "pixels": 94
+    },
+    {
+      "text": "계속",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 76
+    },
+    {
+      "text": "복사",
+      "ink_width": 23,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 73
+    },
+    {
+      "text": "삭제",
+      "ink_width": 22,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 72
+    },
+    {
+      "text": "파일을 읽는 중입니다",
+      "ink_width": 115,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 375
+    },
+    {
+      "text": "DS 카드를 빼거나",
+      "ink_width": 97,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 290
+    },
+    {
+      "text": "전원을 끄지 마세요",
+      "ink_width": 103,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 318
+    },
+    {
+      "text": "불러오지 못했습니다",
+      "ink_width": 109,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 360
+    },
+    {
+      "text": "버튼을 누르거나",
+      "ink_width": 87,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 277
+    },
+    {
+      "text": "화면을 터치해 주세요",
+      "ink_width": 114,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 370
+    },
+    {
+      "text": "기록이 비어 있지 않습니다",
+      "ink_width": 142,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 399
+    },
+    {
+      "text": "먼저 기록을 지워 주세요",
+      "ink_width": 131,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 393
+    },
+    {
+      "text": "파일을 지웁니다",
+      "ink_width": 86,
+      "allocation": [
+        130,
+        12
+      ],
+      "gap": 1,
+      "pixels": 293
+    },
+    {
+      "text": "지워도 괜찮습니까?",
+      "ink_width": 103,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 321
+    },
+    {
+      "text": "1번",
+      "ink_width": 14,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 56
+    },
+    {
+      "text": "2번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 64
+    },
+    {
+      "text": "3번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 63
+    },
+    {
+      "text": "4번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 67
+    },
+    {
+      "text": "5번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 68
+    },
+    {
+      "text": "6번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 65
+    },
+    {
+      "text": "7번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 59
+    },
+    {
+      "text": "8번",
+      "ink_width": 18,
+      "allocation": [
+        32,
+        16
+      ],
+      "gap": 1,
+      "pixels": 67
+    },
+    {
+      "text": "이미 파일이 있습니다",
+      "ink_width": 113,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 334
+    },
+    {
+      "text": "덮어써도 괜찮습니까?",
+      "ink_width": 114,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 368
+    },
+    {
+      "text": "저장하는 중입니다",
+      "ink_width": 98,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 301
+    },
+    {
+      "text": "DS 카드를 빼거나",
+      "ink_width": 97,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 290
+    },
+    {
+      "text": "전원을 끄지 마세요",
+      "ink_width": 103,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 318
+    },
+    {
+      "text": "데이터를 읽지 못했습니다",
+      "ink_width": 136,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 441
+    },
+    {
+      "text": "전원을 끄고 DS 카드를",
+      "ink_width": 127,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 376
+    },
+    {
+      "text": "다시 꽂아 주세요",
+      "ink_width": 93,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 247
+    },
+    {
+      "text": "데이터를 저장하지 못했습니다",
+      "ink_width": 160,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 514
+    },
+    {
+      "text": "전원을 끄고 DS 카드를",
+      "ink_width": 127,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 376
+    },
+    {
+      "text": "다시 꽂아 주세요",
+      "ink_width": 93,
+      "allocation": [
+        174,
+        12
+      ],
+      "gap": 1,
+      "pixels": 247
+    },
+    {
+      "text": "처음부터 시작하려면",
+      "ink_width": 108,
+      "allocation": [
+        152,
+        13
+      ],
+      "gap": 1,
+      "pixels": 347
+    },
+    {
+      "text": "「처음」을",
+      "ink_width": 44,
+      "allocation": [
+        152,
+        13
+      ],
+      "gap": 1,
+      "pixels": 161
+    },
+    {
+      "text": "이어서 시작하려면",
+      "ink_width": 95,
+      "allocation": [
+        152,
+        13
+      ],
+      "gap": 1,
+      "pixels": 281
+    },
+    {
+      "text": "「계속」을",
+      "ink_width": 44,
+      "allocation": [
+        152,
+        13
+      ],
+      "gap": 1,
+      "pixels": 152
+    },
+    {
+      "text": "선택해 주세요!",
+      "ink_width": 75,
+      "allocation": [
+        152,
+        13
+      ],
+      "gap": 1,
+      "pixels": 239
+    },
+    {
+      "text": "처음",
+      "ink_width": 22,
+      "allocation": [
+        49,
+        40
+      ],
+      "gap": 1,
+      "pixels": 85
+    },
+    {
+      "text": "계속",
+      "ink_width": 22,
+      "allocation": [
+        49,
+        40
+      ],
+      "gap": 1,
+      "pixels": 76
+    },
+    {
+      "text": "기획·감수",
+      "ink_width": 47,
+      "allocation": [
+        122,
+        11
+      ],
+      "gap": 1,
+      "pixels": 142
+    },
+    {
+      "text": "히로이 오지",
+      "ink_width": 62,
+      "allocation": [
+        120,
+        11
+      ],
+      "gap": 1,
+      "pixels": 182
+    },
+    {
+      "text": "음악",
+      "ink_width": 23,
+      "allocation": [
+        248,
+        11
+      ],
+      "gap": 1,
+      "pixels": 84
+    },
+    {
+      "text": "히사이시 조",
+      "ink_width": 62,
+      "allocation": [
+        250,
+        11
+      ],
+      "gap": 1,
+      "pixels": 158
+    },
+    {
+      "text": "원화",
+      "ink_width": 22,
+      "allocation": [
+        120,
+        11
+      ],
+      "gap": 1,
+      "pixels": 88
+    },
+    {
+      "text": "츠지노 토라지로",
+      "ink_width": 87,
+      "allocation": [
+        122,
+        11
+      ],
+      "gap": 1,
+      "pixels": 254
+    },
+    {
+      "text": "오리지널 작품",
+      "ink_width": 74,
+      "allocation": [
+        236,
+        12
+      ],
+      "gap": 1,
+      "pixels": 242
+    },
+    {
+      "text": "PC 엔진 SUPER CD-ROM²",
+      "ink_width": 151,
+      "allocation": [
+        236,
+        12
+      ],
+      "gap": 1,
+      "pixels": 400
+    },
+    {
+      "text": "감독          연출",
+      "ink_width": 106,
+      "allocation": [
+        236,
+        12
+      ],
+      "gap": 1,
+      "pixels": 183
+    },
+    {
+      "text": "마스다 쇼지    이와사키 히로마사",
+      "ink_width": 187,
+      "allocation": [
+        246,
+        12
+      ],
+      "gap": 1,
+      "pixels": 437
+    },
+    {
+      "text": "원작          음악",
+      "ink_width": 106,
+      "allocation": [
+        244,
+        11
+      ],
+      "gap": 1,
+      "pixels": 161
+    },
+    {
+      "text": "P.H.차다    후쿠다 야스히코",
+      "ink_width": 156,
+      "allocation": [
+        248,
+        11
+      ],
+      "gap": 1,
+      "pixels": 368
+    },
+    {
+      "text": "센고쿠 만지마루",
+      "ink_width": 80,
+      "allocation": [
+        122,
+        11
+      ],
+      "gap": 0,
+      "pixels": 267
+    },
+    {
+      "text": "이쿠라 카즈에",
+      "ink_width": 69,
+      "allocation": [
+        122,
+        11
+      ],
+      "gap": 0,
+      "pixels": 214
+    },
+    {
+      "text": "고쿠라쿠 타로",
+      "ink_width": 71,
+      "allocation": [
+        122,
+        11
+      ],
+      "gap": 0,
+      "pixels": 227
+    },
+    {
+      "text": "아카보시 쇼이치로",
+      "ink_width": 90,
+      "allocation": [
+        122,
+        11
+      ],
+      "gap": 0,
+      "pixels": 269
+    },
+    {
+      "text": "가부키 단주로     키누",
+      "ink_width": 129,
+      "allocation": [
+        228,
+        11
+      ],
+      "gap": 1,
+      "pixels": 274
+    },
+    {
+      "text": "야마구치 캇페이    이노우에 아즈미",
+      "ink_width": 197,
+      "allocation": [
+        236,
+        11
+      ],
+      "gap": 1,
+      "pixels": 502
+    },
+    {
+      "text": "특별 출연",
+      "ink_width": 51,
+      "allocation": [
+        250,
+        11
+      ],
+      "gap": 1,
+      "pixels": 204
+    },
+    {
+      "text": "키시다 교코",
+      "ink_width": 63,
+      "allocation": [
+        250,
+        11
+      ],
+      "gap": 1,
+      "pixels": 166
+    }
+  ],
+  "minimap_signs": {
+    "2796": [
+      {
+        "box": [
+          152,
+          72,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      }
+    ],
+    "2797": [
+      {
+        "box": [
+          90,
+          40,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          155,
+          40,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          173,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          173,
+          122,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          107,
+          144,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          159,
+          144,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2799": [
+      {
+        "box": [
+          90,
+          40,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          155,
+          40,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          173,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          173,
+          122,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          107,
+          144,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          159,
+          144,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2800": [
+      {
+        "box": [
+          115,
+          69,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2804": [
+      {
+        "box": [
+          80,
+          34,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2805": [
+      {
+        "box": [
+          91,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          155,
+          108,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2806": [
+      {
+        "box": [
+          137,
+          96,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          77,
+          96,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          105,
+          68,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          101,
+          120,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          137,
+          120,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          173,
+          96,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          101,
+          96,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2807": [
+      {
+        "box": [
+          149,
+          96,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          169,
+          120,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      },
+      {
+        "box": [
+          164,
+          52,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2808": [
+      {
+        "box": [
+          143,
+          109,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2809": [
+      {
+        "box": [
+          143,
+          109,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2810": [
+      {
+        "box": [
+          59,
+          135,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          58,
+          77,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          88,
+          135,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          88,
+          87,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2811": [
+      {
+        "box": [
+          80,
+          110,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2812": [
+      {
+        "box": [
+          145,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          188,
+          100,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          97,
+          105,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          105,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2813": [
+      {
+        "box": [
+          145,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          188,
+          100,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          97,
+          105,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          105,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2814": [
+      {
+        "box": [
+          97,
+          39,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          69,
+          39,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2815": [
+      {
+        "box": [
+          99,
+          124,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          141,
+          72,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          100,
+          96,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          99,
+          68,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          141,
+          92,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2818": [
+      {
+        "box": [
+          159,
+          84,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          103,
+          60,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2819": [
+      {
+        "box": [
+          159,
+          84,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          103,
+          60,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2820": [
+      {
+        "box": [
+          135,
+          52,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          103,
+          108,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2821": [
+      {
+        "box": [
+          93,
+          147,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          141,
+          55,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      },
+      {
+        "box": [
+          85,
+          119,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2822": [
+      {
+        "box": [
+          69,
+          95,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          85,
+          71,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          101,
+          107,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2823": [
+      {
+        "box": [
+          188,
+          90,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          159,
+          89,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          188,
+          65,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2824": [
+      {
+        "box": [
+          183,
+          81,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          135,
+          77,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          58,
+          67,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          135,
+          38,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2825": [
+      {
+        "box": [
+          169,
+          57,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          135,
+          110,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          169,
+          105,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          126,
+          81,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          150,
+          81,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2826": [
+      {
+        "box": [
+          121,
+          113,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          128,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          111,
+          95,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          111,
+          79,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2827": [
+      {
+        "box": [
+          121,
+          113,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          128,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          111,
+          95,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          111,
+          79,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2828": [
+      {
+        "box": [
+          154,
+          38,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          140,
+          67,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      },
+      {
+        "box": [
+          164,
+          72,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2830": [
+      {
+        "box": [
+          188,
+          33,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          82,
+          98,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          188,
+          102,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          83,
+          63,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          59,
+          98,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          192,
+          139,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          149,
+          102,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          164,
+          139,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2833": [
+      {
+        "box": [
+          90,
+          127,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          126,
+          103,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2834": [
+      {
+        "box": [
+          101,
+          95,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          145,
+          95,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2835": [
+      {
+        "box": [
+          103,
+          108,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          135,
+          52,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2836": [
+      {
+        "box": [
+          111,
+          60,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          135,
+          108,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2837": [
+      {
+        "box": [
+          108,
+          90,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2838": [
+      {
+        "box": [
+          95,
+          116,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          127,
+          68,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2839": [
+      {
+        "box": [
+          97,
+          114,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          109,
+          81,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          94,
+          81,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          150,
+          57,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2840": [
+      {
+        "box": [
+          97,
+          114,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          109,
+          81,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          94,
+          81,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          150,
+          57,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2841": [
+      {
+        "box": [
+          97,
+          115,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      },
+      {
+        "box": [
+          126,
+          53,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2842": [
+      {
+        "box": [
+          97,
+          110,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          121,
+          110,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2843": [
+      {
+        "box": [
+          155,
+          105,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          140,
+          105,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2844": [
+      {
+        "box": [
+          95,
+          116,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          151,
+          76,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2845": [
+      {
+        "box": [
+          95,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          151,
+          116,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2847": [
+      {
+        "box": [
+          64,
+          93,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          78,
+          122,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          107,
+          93,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          87,
+          93,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          116,
+          122,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          97,
+          122,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2848": [
+      {
+        "box": [
+          131,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          91,
+          76,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2849": [
+      {
+        "box": [
+          151,
+          92,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          95,
+          100,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2850": [
+      {
+        "box": [
+          99,
+          101,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          75,
+          101,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      },
+      {
+        "box": [
+          132,
+          129,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2852": [
+      {
+        "box": [
+          174,
+          123,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          135,
+          126,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2853": [
+      {
+        "box": [
+          116,
+          134,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          121,
+          109,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          97,
+          109,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          164,
+          134,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2854": [
+      {
+        "box": [
+          73,
+          41,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          111,
+          132,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          145,
+          103,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          87,
+          69,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          140,
+          132,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          102,
+          41,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2855": [
+      {
+        "box": [
+          91,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          155,
+          108,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2856": [
+      {
+        "box": [
+          64,
+          93,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          78,
+          122,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          107,
+          93,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          87,
+          93,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          116,
+          122,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          97,
+          122,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2857": [
+      {
+        "box": [
+          64,
+          93,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          78,
+          122,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          107,
+          93,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          87,
+          93,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          116,
+          122,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          97,
+          122,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2858": [
+      {
+        "box": [
+          131,
+          76,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          91,
+          76,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2859": [
+      {
+        "box": [
+          106,
+          98,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          111,
+          45,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          125,
+          50,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          159,
+          103,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2860": [
+      {
+        "box": [
+          159,
+          137,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      }
+    ],
+    "2861": [
+      {
+        "box": [
+          73,
+          41,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          111,
+          132,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          145,
+          103,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          87,
+          69,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          140,
+          132,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          102,
+          41,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2862": [
+      {
+        "box": [
+          73,
+          41,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          111,
+          132,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          145,
+          103,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          87,
+          69,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          140,
+          132,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          102,
+          41,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2865": [
+      {
+        "box": [
+          66,
+          54,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          174,
+          114,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          138,
+          114,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          102,
+          54,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2866": [
+      {
+        "box": [
+          140,
+          79,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          169,
+          102,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2867": [
+      {
+        "box": [
+          114,
+          85,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2868": [
+      {
+        "box": [
+          168,
+          135,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          101,
+          104,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          135,
+          104,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          92,
+          137,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2870": [
+      {
+        "box": [
+          168,
+          135,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          101,
+          104,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          135,
+          104,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          92,
+          137,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2871": [
+      {
+        "box": [
+          168,
+          135,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          101,
+          104,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          135,
+          104,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          92,
+          137,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2872": [
+      {
+        "box": [
+          101,
+          130,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          174,
+          78,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          72,
+          106,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          116,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2874": [
+      {
+        "box": [
+          101,
+          130,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          174,
+          78,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          72,
+          106,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          116,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2875": [
+      {
+        "box": [
+          101,
+          130,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          174,
+          78,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          72,
+          106,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          116,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2876": [
+      {
+        "box": [
+          108,
+          126,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          66,
+          66,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2877": [
+      {
+        "box": [
+          140,
+          106,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2878": [
+      {
+        "box": [
+          135,
+          92,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          79,
+          52,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2879": [
+      {
+        "box": [
+          151,
+          92,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          95,
+          100,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2880": [
+      {
+        "box": [
+          109,
+          91,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          122,
+          143,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          101,
+          119,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2882": [
+      {
+        "box": [
+          109,
+          91,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          122,
+          143,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          101,
+          119,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2883": [
+      {
+        "box": [
+          111,
+          132,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          150,
+          132,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          130,
+          132,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          126,
+          106,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2885": [
+      {
+        "box": [
+          111,
+          132,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          150,
+          132,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          130,
+          132,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          126,
+          106,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2886": [
+      {
+        "box": [
+          120,
+          78,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          156,
+          120,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          132,
+          120,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2887": [
+      {
+        "box": [
+          145,
+          54,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          126,
+          54,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2888": [
+      {
+        "box": [
+          159,
+          84,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          95,
+          124,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2889": [
+      {
+        "box": [
+          143,
+          116,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          103,
+          68,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2890": [
+      {
+        "box": [
+          90,
+          132,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          96,
+          96,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2891": [
+      {
+        "box": [
+          149,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          59,
+          105,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          59,
+          134,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2892": [
+      {
+        "box": [
+          114,
+          114,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          144,
+          114,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          118,
+          66,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2893": [
+      {
+        "box": [
+          120,
+          60,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          156,
+          54,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2894": [
+      {
+        "box": [
+          184,
+          58,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          136,
+          90,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          168,
+          90,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2895": [
+      {
+        "box": [
+          145,
+          54,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          126,
+          54,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2896": [
+      {
+        "box": [
+          195,
+          53,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          195,
+          85,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          115,
+          85,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          126,
+          43,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2899": [
+      {
+        "box": [
+          143,
+          116,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          103,
+          68,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2900": [
+      {
+        "box": [
+          135,
+          92,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          79,
+          52,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2901": [
+      {
+        "box": [
+          151,
+          116,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          95,
+          68,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2902": [
+      {
+        "box": [
+          66,
+          48,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          168,
+          48,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          108,
+          54,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          144,
+          48,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2903": [
+      {
+        "box": [
+          97,
+          110,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          150,
+          38,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      }
+    ],
+    "2904": [
+      {
+        "box": [
+          179,
+          48,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          130,
+          103,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          82,
+          89,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          131,
+          48,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          155,
+          48,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      },
+      {
+        "box": [
+          150,
+          103,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2907": [
+      {
+        "box": [
+          95,
+          68,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          151,
+          108,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2908": [
+      {
+        "box": [
+          95,
+          108,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          143,
+          68,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2909": [
+      {
+        "box": [
+          177,
+          134,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          65,
+          106,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          81,
+          106,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          117,
+          106,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          133,
+          106,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2910": [
+      {
+        "box": [
+          179,
+          79,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          194,
+          79,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2911": [
+      {
+        "box": [
+          78,
+          134,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          145,
+          110,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          106,
+          81,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          106,
+          57,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2912": [
+      {
+        "box": [
+          126,
+          114,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      }
+    ],
+    "2913": [
+      {
+        "box": [
+          180,
+          127,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          150,
+          127,
+          10,
+          9
+        ],
+        "jp": "雑",
+        "ko": "잡",
+        "ink_pixels": 33
+      }
+    ],
+    "2914": [
+      {
+        "box": [
+          151,
+          109,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          95,
+          69,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2915": [
+      {
+        "box": [
+          151,
+          116,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          95,
+          68,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2916": [
+      {
+        "box": [
+          150,
+          37,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          155,
+          114,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          92,
+          47,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2918": [
+      {
+        "box": [
+          101,
+          95,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          165,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          145,
+          74,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          95,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2920": [
+      {
+        "box": [
+          101,
+          95,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          165,
+          95,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          145,
+          74,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          145,
+          95,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2921": [
+      {
+        "box": [
+          78,
+          49,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          66,
+          121,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          66,
+          85,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      }
+    ],
+    "2922": [
+      {
+        "box": [
+          87,
+          110,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          77,
+          77,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          78,
+          38,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          97,
+          77,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      },
+      {
+        "box": [
+          126,
+          72,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ],
+    "2923": [
+      {
+        "box": [
+          144,
+          127,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          169,
+          127,
+          10,
+          9
+        ],
+        "jp": "道",
+        "ko": "도",
+        "ink_pixels": 25
+      },
+      {
+        "box": [
+          144,
+          98,
+          10,
+          9
+        ],
+        "jp": "武",
+        "ko": "무",
+        "ink_pixels": 23
+      },
+      {
+        "box": [
+          169,
+          98,
+          10,
+          9
+        ],
+        "jp": "預",
+        "ko": "창",
+        "ink_pixels": 28
+      }
+    ],
+    "2924": [
+      {
+        "box": [
+          95,
+          52,
+          10,
+          9
+        ],
+        "jp": "宿",
+        "ko": "숙",
+        "ink_pixels": 22
+      },
+      {
+        "box": [
+          151,
+          108,
+          10,
+          9
+        ],
+        "jp": "茶",
+        "ko": "차",
+        "ink_pixels": 26
+      }
+    ]
+  },
+  "minimaps_scanned": 123,
+  "verification": "decoded payload readback and unrelated file preservation passed",
+  "runtime_verified": false,
+  "pending": [
+    "embedded mainmenu button assembly audit",
+    "complete in-game scene coverage including battle and ending",
+    "unclassified scene texture text audit"
+  ],
+  "user_confirmed_screens": [
+    "title",
+    "menu",
+    "province map"
+  ],
+  "xdelta_roundtrip": "byte-identical",
+  "deploy_rebuild": "byte-identical",
+  "patched_rom_sha256": "c6dce49289c76bdcc891ac9904f29867ff8e7534da23e94e1bbb0f1911b12383"
+}

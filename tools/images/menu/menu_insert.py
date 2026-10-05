@@ -54,8 +54,13 @@ def pack_tile4(b):
 def insert_mainmenu(rom,n2f,png,COLS=8):
     fid=n2f['mainmenu.obc']
     dec=bytearray(tools.lz10_dec(tools.read_file(rom,fid)[0]))
-    header=bytes(dec[:456]); pal=bgr555(dec[8:456])
+    palette_bytes=st.unpack_from('<H',dec,0)[0]
+    data_start=8+palette_bytes
+    assert data_start+256==456
+    assert st.unpack_from('<I',dec,4+palette_bytes)[0]==len(dec)-data_start
+    header=bytes(dec[:456]); pal=bgr555(dec[4:4+palette_bytes])
     idx=load_idx(png,pal); td=bytearray(len(dec)-456); nw=(len(dec)-456)//64//8
+    assert idx.shape==(((nw+COLS-1)//COLS)*16,COLS*32), 'Unexpected main menu image size'
     for w in range(nw):
         wr,wc=divmod(w,COLS)
         for t in range(8):
@@ -71,6 +76,7 @@ def insert_command(rom,n2f,png,n):
     nm=f"bs_obj_command_icon{n}.cobj"
     if nm not in n2f: return False
     pal=synth_pal(); idx=load_idx(png,pal)
+    assert idx.shape==(16,32) and idx.max()<16, 'Invalid command image size or palette index'
     tiles=[bytearray(32) for _ in range(8)]
     for t in range(8):
         tr,tc=divmod(t,4)
@@ -93,13 +99,15 @@ def insert_kiten(rom,png):
     pal=bgr555(pdec)
     while len(pal)<256: pal.append((255,0,255))
     idx=load_idx(png,pal)
+    assert idx.shape==(256,256), 'Unexpected Kiten image size'
     # 뱅크 보존 retile
     tiles=[]; look={}; tm=[]
     for r in range(32):
         for c in range(32):
             blk=idx[r*8:r*8+8,c*8:c*8+8]
-            pl=int(np.bincount((blk//16).flatten().astype(int)).argmax())
-            sub=(blk.astype(int)-pl*16).clip(0,15).astype(np.uint8)
+            banks=np.unique(blk//16)
+            if len(banks)!=1: raise ValueError(f'Mixed palette banks in tile ({c},{r}): {banks}')
+            pl=int(banks[0]); sub=(blk%16).astype(np.uint8)
             found=None
             for hf,vf in [(0,0),(1,0),(0,1),(1,1)]:
                 v=sub
@@ -110,7 +118,7 @@ def insert_kiten(rom,png):
             if found is None:
                 k=pack_tile4(sub); ti=len(tiles); tiles.append(k); look[k]=ti; found=(ti,0,0)
             ti,hf,vf=found; tm.append(ti|(hf<<10)|(vf<<11)|(pl<<12))
-    if len(tiles)>1024: raise RuntimeError("kiten 타일 수 초과")
+    if len(tiles)>orig_tiles: raise RuntimeError(f"kiten 원본 타일 용량 초과: {len(tiles)} > {orig_tiles}")
     while len(tiles)<orig_tiles: tiles.append(bytes(32))
     char_new=st.pack('<I',len(tiles)*32)+b''.join(tiles)
     scrn_new=sdec[:4]+b''.join(st.pack('<H',e) for e in tm)
