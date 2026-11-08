@@ -8,7 +8,7 @@
 
 - 코드/도구: **MIT** · 폰트: **Galmuri11 / Galmuri14** (SIL OFL 1.1)
 - 비영리 팬 번역 — **이 저장소에는 게임 롬이 일절 포함되어 있지 않습니다.**
-- 최신 버전: **v3.4** → [Releases](../../releases)
+- 최신 버전: **v3.5** → [Releases](../../releases)
 - 이전 저장소(`snake7594/NDS-Tengai-Makyou-II`)의 전체 이력(v1.0~v3.3)을 이어받은 새 공식 저장소입니다.
 
 ---
@@ -23,14 +23,16 @@
 **PC (xdelta3)**
 
 ```bash
-xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai_Makyou_II_KR_v3.4.xdelta" 한글판.nds
+xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai_Makyou_II_KR_v3.5.xdelta" 한글판.nds
 ```
 
 **GUI 패처**(Delta Patcher, MultiPatch 등): 원본 롬과 `.xdelta`를 지정하고 Apply.
 
 **안드로이드**: UniPatcher에서 `.xdelta`를 고르고 원본 롬을 지정.
 
-결과 확인 — v3.4 결과물의 MD5는 `04746b727245140c90527d717ecba762` 입니다.
+결과 확인 — v3.5 결과물의 MD5는 `2b96375ecfa39193efeed111f2ffb02e` 입니다.
+
+**v3.5:** 이슈 #1 대응 — 전투 「卍답」 이름, 상태창·전투 패널 겹침, 스태프 크레딧 회색 패널, 아이템 읽기 줄 깨짐, 도구/상점 버튼, 미번역 18곳 수정. [상세 내역](docs/releases/v3.5/README.md).
 
 **v3.4:** 이미지 리소스 169개 재작업, 메뉴 흰색 글자·하단 버튼·나라 지도 정렬 수정, 미니맵 표지 324곳 교체. [상세 패치 내역과 변경 이미지 197개](docs/releases/v3.4/README.md).
 

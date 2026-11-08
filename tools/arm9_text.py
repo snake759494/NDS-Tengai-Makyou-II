@@ -41,6 +41,12 @@ def apply_entries(a9: bytearray, entries, syl2sjis):
     errors = []
     for e in entries:
         off = e['off']; jp = e['jp']; ko = e.get('ko') or ''
+        if e.get('clear'):
+            # v3.5: 반각 가나 전용 렌더러(도구 읽기 줄)는 한글을 못 그리므로 빈 문자열로 만든다.
+            jb = jp.encode('shift_jis'); L = len(jb)
+            if bytes(a9[off:off + L]) != jb:
+                errors.append((off, f"원문 불일치(clear) {jp!r}")); continue
+            a9[off:off + L] = bytes(L); applied += 1; continue
         if not ko.strip():
             continue
         try:
@@ -78,6 +84,10 @@ def verify_entries(a9: bytes, entries, syl2sjis):
     bad = []
     for e in entries:
         off = e['off']; ko = e.get('ko') or ''
+        if e.get('clear'):
+            if a9[off] != 0:
+                bad.append((off, '', bytes(a9[off:off+4]).hex()))
+            continue
         if not ko.strip():
             continue
         L = len(encode_ko(ko, syl2sjis))

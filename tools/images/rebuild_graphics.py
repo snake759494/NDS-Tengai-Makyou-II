@@ -56,8 +56,13 @@ def render_bg(char,screen,bpp=4):
         y,x=divmod(i,32);out[y*8:y*8+8,x*8:x*8+8]=tile
     return out
 
-def repack_bg(a,capacity,bpp=4,allow_flips=True):
+def repack_bg(a,capacity,bpp=4,allow_flips=True,seed=()):
+    # The game treats character tile 0 as the transparent blank, so the original
+    # leading tiles must keep their slots (v3.5: credits showed grey blocks when
+    # an opaque panel tile was packed into slot 0).
     packed=[];lookup={};entries=[]
+    for key in seed:
+        key=bytes(key);lookup.setdefault(key,len(packed));packed.append(key)
     for tile in image_tiles(a):
         bank=0
         if bpp==4:
@@ -103,6 +108,7 @@ def rebuild(jp_path,reference_path,outdir):
 
     # Main menu words are independent 32x16 allocations, not contiguous screen text.
     fid=inv['/data/usd/mainmenu.obc']; d=bytearray(ag.decode(jp.files[fid])); t=np.frombuffer(d[456:],np.uint8).reshape(-1,8,8).copy()
+    ref_menu=np.frombuffer(ag.decode(ref.files[fid])[456:],np.uint8).reshape(-1,8,8).copy()
     # Solid white: the old cyan ramp is deliberately removed.
     for index in range(34,38):struct.pack_into('<H',d,4+index*2,0x7fff)
     words={51:'닫기',52:'판매',53:'목록',54:'상태',55:'도구',56:'주문',57:'무구',58:'오의',60:'포격',61:'순이',62:'지도',63:'모드',64:'작전',65:'만지',66:'카부키',67:'극락',68:'키누'}
@@ -123,6 +129,12 @@ def rebuild(jp_path,reference_path,outdir):
         # Each action owns three independent 16x16 character cells.
         t[start:start+12]=0
         for j,ch in enumerate(label):t[start+j*4:start+j*4+4]=image_tiles(text_mask(ch,16,16)*1)
+    # v3.5: names (words 65-68), the 체/기/금/후 labels and the action buttons are OBJ
+    # tiles whose ink is palette index 2 (white in game) with glyphs placed in the
+    # top-left of small cells. The v3.4 redraw used index 1 (black) and centred 16x16
+    # glyphs, which hid 사용/구입 and overlapped the status numbers. Keep the
+    # verified v3.3 reference tiles for these allocations.
+    for a0,a1 in [(520,568),(648,720)]:t[a0:a1]=ref_menu[a0:a1]
     put(fid,bytes(d[:456])+t.tobytes())
     ag.ex.save_p(footer,ag.ex.bgr555(d[4:196]),str(outdir/'footer_ko.png'))
 
@@ -155,12 +167,12 @@ def rebuild(jp_path,reference_path,outdir):
     for n,s in commands.items():
         fid=inv[f'/iv_battle/grph/obj/files/bs_obj_command_icon{n}.cobj']
         a=text_mask(s,32,16)*5;put(fid,pack4(image_tiles(a)))
-    for n,s in enumerate(['만지','카부키','극락','키누'],1):
-        fid=inv[f'/iv_battle/grph/obj/files/bs_obj_name_p{n}.cobj'];t=ag.tiles4(ag.decode(jp.files[fid])).copy()
-        t[:8]=image_tiles(text_mask(s,32,16,0 if s=='카부키' else 1)*5)
-        # Remaining 12 tiles comprise three 16x16 allocations; last one stays original.
-        for start,label in [(8,'체'),(12,'기')]:t[start:start+4]=image_tiles(text_mask(label,16,16)*5)
-        put(fid,pack4(t))
+    # v3.5: the battle name plates draw 체/기 as small glyphs in the top-left of
+    # their cells next to the HP/skill numbers (same as the original 体/技). The v3.4
+    # centred 16x16 redraw overlapped the numbers, so keep the v3.3 reference plates.
+    for n in range(1,5):
+        fid=inv[f'/iv_battle/grph/obj/files/bs_obj_name_p{n}.cobj']
+        put(fid,ag.decode(ref.files[fid]))
 
     # Save/load buttons: the text sprite is separate from its decorative frame.
     for fid,s in [(9161,'취소'),(9163,'결정'),(9165,'삭제')]:
@@ -238,7 +250,7 @@ def rebuild(jp_path,reference_path,outdir):
     distance=((np.asarray(sourcepal[:16],np.int32)[:,None,:]-np.asarray(targetpal,np.int32)[None,:,:])**2).sum(axis=2)
     remap=distance.argmin(axis=1).astype(np.uint8)
     duplicate=remap[a]
-    cc,ss=repack_bg(duplicate,len(ag.decode(jp.files[12629]))//32)
+    cc,ss=repack_bg(duplicate,len(ag.decode(jp.files[12629]))//32,seed=[ag.decode(jp.files[12629])[:32]])
     put(12629,cc);put(12631,ss)
     assert np.array_equal(render_bg(cc,ss),duplicate)
 
@@ -260,7 +272,7 @@ def rebuild(jp_path,reference_path,outdir):
             block=edited[y:y+8,x:x+8]
             vals,counts=np.unique(block,return_counts=True)
             if counts.max()>=62:block[:]=vals[counts.argmax()]
-    cc,ss=repack_bg(edited,len(ag.decode(jp.files[fid]))//64,8,allow_flips=False)
+    cc,ss=repack_bg(edited,len(ag.decode(jp.files[fid]))//64,8,allow_flips=False,seed=[ag.decode(jp.files[fid])[:64]])
     put(fid,cc);put(sfid,ss)
     assert np.array_equal(render_bg(cc,ss,8),edited)
     outside=np.ones(original.shape,bool);outside[54:107,28:228]=False
@@ -274,7 +286,7 @@ def rebuild(jp_path,reference_path,outdir):
     rgb=np.asarray(art)[149:179,154:256].astype(np.int32)
     palette=np.asarray(pal[:16],np.int32)
     edited[149:179,154:256]=((rgb.reshape(-1,1,3)-palette[None,:,:])**2).sum(axis=2).argmin(axis=1).reshape(rgb.shape[:2])
-    cc,ss=repack_bg(edited,(len(cd)-4)//32)
+    cc,ss=repack_bg(edited,(len(cd)-4)//32,seed=[cd[4:36]])
     put(fid,cd[:4]+cc);put(sfid,sd[:4]+ss)
     assert np.array_equal(ag.ex._render_indexed(decoded[fid],decoded[sfid]),edited)
     ag.ex.save_p(edited,pal,str(outdir/'save_logo_ko.png'))
@@ -325,7 +337,8 @@ def rebuild(jp_path,reference_path,outdir):
             a[ink]=1
             for box,line in zip(positions,lines):paint(a,box,line,15,1,gap=0 if fid==11763 else 1)
             images.append(a)
-        cc,ss=repack_bg(np.concatenate(images,axis=0),len(ag.decode(jp.files[fid]))//32)
+        jc=ag.decode(jp.files[fid])
+        cc,ss=repack_bg(np.concatenate(images,axis=0),len(jc)//32,seed=[jc[:32],jc[32:64]])
         put(fid,cc)
         for page,(sfid,a) in enumerate(zip(maps,images)):
             page_map=ss[page*2048:(page+1)*2048];put(sfid,page_map)
