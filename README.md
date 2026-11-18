@@ -8,7 +8,7 @@
 
 - 코드/도구: **MIT** · 폰트: **Galmuri11 / Galmuri14** (SIL OFL 1.1)
 - 비영리 팬 번역 — **이 저장소에는 게임 롬이 일절 포함되어 있지 않습니다.**
-- 최신 버전: **v3.6** → [Releases](../../releases)
+- 최신 버전: **v3.7** → [Releases](../../releases)
 - 이전 저장소(`snake7594/NDS-Tengai-Makyou-II`)의 전체 이력(v1.0~v3.3)을 이어받은 새 공식 저장소입니다.
 
 ---
@@ -23,14 +23,16 @@
 **PC (xdelta3)**
 
 ```bash
-xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai_Makyou_II_KR_v3.6.xdelta" 한글판.nds
+xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai_Makyou_II_KR_v3.7.xdelta" 한글판.nds
 ```
 
 **GUI 패처**(Delta Patcher, MultiPatch 등): 원본 롬과 `.xdelta`를 지정하고 Apply.
 
 **안드로이드**: UniPatcher에서 `.xdelta`를 고르고 원본 롬을 지정.
 
-결과 확인 — v3.6 결과물의 MD5는 `4d53f62d9e1cdea6ed0bbf2a4b67e353` 입니다.
+결과 확인 — v3.7 결과물의 MD5는 `a20a82e6d46211ae24261439f0abf51e` 입니다.
+
+**v3.7:** 이슈 #2 남은 항목 — 덮어쓰기 「아니오」 버튼, 주문 메뉴 커서, 미니맵 간판 한자·「드」/「짐」 글자, 「!!」 잔상, 암흑란 대사 잘림. [상세 내역](docs/releases/v3.7/README.md).
 
 **v3.6:** 이슈 #2 대응 — 오프닝 자막 가림, 대사 줄 넘침 약 80곳, 정보줄 깨짐, 전투 약칭(돐/卍), 카부키 이름표, 세이브 화면 단/지명, 무비 예/아니오 그래픽, 용어 통일. [상세 내역](docs/releases/v3.6/README.md).
 

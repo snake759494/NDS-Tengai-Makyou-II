@@ -5,7 +5,7 @@ from PIL import Image, ImageFont, ImageDraw
 import audit_graphics as ag
 
 TEMPLATES=[(2797,90,40,'宿','숙'),(2797,173,95,'道','도'),(2797,173,122,'武','무'),
-           (2797,107,144,'預','창'),(2797,159,144,'茶','차'),(2800,115,69,'雑','잡')]
+           (2797,107,144,'預','보'),(2797,159,144,'茶','차'),(2800,115,69,'雑','잡')]
 
 def unpack(d):
     palette_size=int.from_bytes(d[:2],'little');offset=8+palette_size
@@ -19,13 +19,75 @@ def unpack(d):
 def dark(rgb):
     return (rgb[:,:,0]<100)&(rgb[:,:,1]<100)&(rgb[:,:,2]<70)
 
+# Hand-drawn 10x9 sign glyphs.  Rendering a 9px font clipped strokes
+# (무 came out as 드, 잡 as 짐), so the bitmaps are fixed here.
+GLYPHS={
+'숙':"""
+....##....
+...#..#...
+..#....#..
+##########
+....##....
+.########.
+........#.
+........#.
+..........""",
+'도':"""
+.#######..
+.#........
+.#........
+.#######..
+..........
+....##....
+....##....
+##########
+..........""",
+'무':"""
+.########.
+.#......#.
+.#......#.
+.########.
+..........
+##########
+....##....
+....##....
+....##....""",
+'보':"""
+.#......#.
+.#......#.
+.########.
+.#......#.
+.########.
+....##....
+....##....
+##########
+..........""",
+'차':"""
+...#....#.
+.#####..#.
+...#....#.
+..#.#...##
+.#...#..#.
+#.....#.#.
+........#.
+........#.
+..........""",
+'잡':"""
+#####..#..
+..#....#..
+.#.#...###
+#...#..#..
+.......#..
+..#...#...
+..#####...
+..#...#...
+..#####...""",
+}
+
 def glyph(text):
-    f=ImageFont.truetype(str(Path(__file__).parent/'mainmenu/Galmuri14.ttf'),9)
-    im=Image.new('L',(24,24));ImageDraw.Draw(im).text((3,3),text,font=f,fill=255)
-    bits=np.asarray(im)>100;y,x=np.where(bits);bits=bits[y.min():y.max()+1,x.min():x.max()+1]
-    h,w=bits.shape
-    assert 0<h<=9 and 0<w<=10
-    out=np.zeros((9,10),bool);out[(9-h)//2:(9-h)//2+h,(10-w)//2:(10-w)//2+w]=bits
+    rows=GLYPHS[text].strip().split()
+    out=np.array([[c=='#' for c in r] for r in rows],bool)
+    assert out.shape==(9,10),text
     return out
 
 def prepare(rom):
@@ -36,19 +98,26 @@ def prepare(rom):
         result.append((jp,ko,codes,glyph(ko)))
     return result
 
-def matches(rgb,templates):
-    m=dark(rgb);h,w=m.shape
-    rowcode=sum(m[:,i:i+w-9].astype(np.uint16)*(1<<i) for i in range(10))
-    result=[]
+def matches(rgb,templates,max_dist=8,min_gold=0.4):
+    """Find signs whose ink differs from a template by at most max_dist pixels.
+
+    Some maps (e.g. wab1 after the flower event, wga1, ynl0) redraw the same
+    signs with a few pixels changed, so exact row matching misses them.  The
+    background around the ink must still be the gold sign plate.
+    """
+    from numpy.lib.stride_tricks import sliding_window_view
+    m=sliding_window_view(dark(rgb),(9,10))
+    gold=(rgb[:,:,0]>160)&(rgb[:,:,1]>80)&(rgb[:,:,2]<90)
+    g=sliding_window_view(gold,(9,10))
+    best={}
     for jp,ko,codes,bitmap in templates:
-        found=np.ones((h-8,w-9),bool)
-        for row in range(9):found&=rowcode[row:row+h-8]==codes[row]
-        for y,x in zip(*np.where(found)):
-            block=rgb[y:y+9,x:x+10]
-            gold=(block[:,:,0]>160)&(block[:,:,1]>80)&(block[:,:,2]<90)
-            if gold.mean()<0.3:continue
-            result.append((int(x),int(y),jp,ko,bitmap))
-    return result
+        ink=np.array([[(int(c)>>i)&1 for i in range(10)] for c in codes],bool)
+        dist=(m!=ink).sum((2,3))
+        for y,x in zip(*np.where(dist<=max_dist)):
+            if g[y,x][~ink].mean()<min_gold:continue
+            key=(int(x),int(y));d=int(dist[y,x])
+            if key not in best or d<best[key][0]:best[key]=(d,jp,ko,bitmap)
+    return [(x,y,jp,ko,bitmap) for (x,y),(d,jp,ko,bitmap) in sorted(best.items())]
 
 def rebuild(d,templates):
     a,pal,offset=unpack(d);rgb=pal[a];hits=matches(rgb,templates);records=[]

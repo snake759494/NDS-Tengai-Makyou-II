@@ -183,8 +183,12 @@ def rebuild(jp_path,reference_path,outdir):
         put(fid,d[:4]+pack4(t))
     for fid,s in [(9168,'예'),(9170,'아니오'),(9172,'계속'),(9174,'복사'),(9176,'삭제')]:
         d=ag.decode(jp.files[fid]);t=ag.tiles4(d[4:]).copy()
-        # Foreground text occupies tiles 0..7 in both selected and unselected frames.
-        t[:8]=image_tiles(text_mask(s,32,16,0 if s=='아니오' else 1)*15)
+        # Foreground text is a 32x16 sprite (tiles 0..7) plus an 8x16 strip (tiles 16..17);
+        # the JP いいえ spills into the strip, so redraw the full 40px width.
+        frames=ag.obj_frames(ag.decode(jp.files[fid-1]),t)
+        assert [(r['tile'],r['w'],r['h']) for r in frames[0][1]]==[(0,32,16),(16,8,16)],fid
+        m=text_mask(s,40,16)*15
+        t[:8]=image_tiles(m[:,:32]);t[16:18]=image_tiles(m[:,32:])
         put(fid,d[:4]+pack4(t))
 
     # Movie/event yes-no prompt (uno_all/vis/sys/yesno.chr): はい=tiles 0..7 (32x16),
