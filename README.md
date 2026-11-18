@@ -8,7 +8,7 @@
 
 - 코드/도구: **MIT** · 폰트: **Galmuri11 / Galmuri14** (SIL OFL 1.1)
 - 비영리 팬 번역 — **이 저장소에는 게임 롬이 일절 포함되어 있지 않습니다.**
-- 최신 버전: **v3.5** → [Releases](../../releases)
+- 최신 버전: **v3.6** → [Releases](../../releases)
 - 이전 저장소(`snake7594/NDS-Tengai-Makyou-II`)의 전체 이력(v1.0~v3.3)을 이어받은 새 공식 저장소입니다.
 
 ---
@@ -23,14 +23,16 @@
 **PC (xdelta3)**
 
 ```bash
-xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai_Makyou_II_KR_v3.5.xdelta" 한글판.nds
+xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai_Makyou_II_KR_v3.6.xdelta" 한글판.nds
 ```
 
 **GUI 패처**(Delta Patcher, MultiPatch 등): 원본 롬과 `.xdelta`를 지정하고 Apply.
 
 **안드로이드**: UniPatcher에서 `.xdelta`를 고르고 원본 롬을 지정.
 
-결과 확인 — v3.5 결과물의 MD5는 `2b96375ecfa39193efeed111f2ffb02e` 입니다.
+결과 확인 — v3.6 결과물의 MD5는 `4d53f62d9e1cdea6ed0bbf2a4b67e353` 입니다.
+
+**v3.6:** 이슈 #2 대응 — 오프닝 자막 가림, 대사 줄 넘침 약 80곳, 정보줄 깨짐, 전투 약칭(돐/卍), 카부키 이름표, 세이브 화면 단/지명, 무비 예/아니오 그래픽, 용어 통일. [상세 내역](docs/releases/v3.6/README.md).
 
 **v3.5:** 이슈 #1 대응 — 전투 「卍답」 이름, 상태창·전투 패널 겹침, 스태프 크레딧 회색 패널, 아이템 읽기 줄 깨짐, 도구/상점 버튼, 미번역 18곳 수정. [상세 내역](docs/releases/v3.5/README.md).
 

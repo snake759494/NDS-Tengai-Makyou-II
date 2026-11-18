@@ -187,6 +187,15 @@ def rebuild(jp_path,reference_path,outdir):
         t[:8]=image_tiles(text_mask(s,32,16,0 if s=='아니오' else 1)*15)
         put(fid,d[:4]+pack4(t))
 
+    # Movie/event yes-no prompt (uno_all/vis/sys/yesno.chr): はい=tiles 0..7 (32x16),
+    # いいえ=tiles 8..15 (32x16) + 16..19 (16x16), ink index 15.
+    fid=inv['/uno_all/vis/sys/yesno.chr'];d=ag.decode(jp.files[fid]);t=ag.tiles4(d[4:]).copy()
+    assert len(t)==20
+    t[:8]=image_tiles(text_mask('예',32,16)*15)
+    no=text_mask('아니오',48,16)*15
+    t[8:16]=image_tiles(no[:,:32]);t[16:20]=image_tiles(no[:,32:])
+    put(fid,d[:4]+pack4(t))
+
     messages={
       9186:['파일을 읽는 중입니다','DS 카드를 빼거나','전원을 끄지 마세요'],
       9188:['불러오지 못했습니다','버튼을 누르거나','화면을 터치해 주세요'],
